@@ -1,28 +1,26 @@
-{% extends 'base.html' %}
-
-{% load static %}
+{% extends 'home/base.html' %}
 <!-- home/templates/home/main.html -->
 
 {% block content %}
-<link rel="stylesheet" href="{% static 'css/styles.css' %}">
-
-	<nav id="menu">
-    	<ul>
-        	<li><a href="/cursos">Cursos</a></li>
-        	<li><a href="#">Alunos</a></li>
-        	<li><a href="#">Info Curso</a></li>
-       
-    	</ul>
-	</nav>
-	<p>Olá {{ user.first_name }}!</p>
- 	<p><a href="{% url 'logout' %}">logout</a></p>
- 	{% if course_list %}
-    	<ul>
-    	{% for course in course_list %}
-        	<li><a href="#">{{ course.name }}</a> - <a href="#"> apagar </a></li>
-    	{% endfor %}
-    	</ul>
-	{% else %}
-    	<p>Você ainda não cadastrou nenhum curso.</p>
-	{% endif %}
+<div class = "row">
+	<div class = "content">
+		{% if course_list %}
+   			<ul>
+	    	{% for course in course_list %}
+    	    	<li><a href="#">{{ course.name }}</a> - <a href="#"> 	apagar </a></li>
+	    	{% endfor %}
+	    	</ul>
+		{% else %}
+	    	<p>Você ainda não cadastrou nenhum curso.</p>
+		{% endif %}
+	</div>
+	<div class = "content">
+		<p>mais conteúdo</p>
+		<p>mais conteúdo</p>
+		<p>mais conteúdo</p>
+		<p>mais conteúdo</p>
+		<p>mais conteúdo</p>
+		<p>mais conteúdo</p>
+	</div>
+</div>
 {% endblock %}
