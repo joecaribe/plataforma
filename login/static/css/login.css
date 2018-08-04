@@ -1,14 +1,42 @@
 body{
+	/*Deixa o body do tamanho da janela do navegador*/
+	height: 100vh;
+	width: 100vh;
+
 	font-family: Arial;
-	margin: 0;
+    background: #f3eae0;
+}
+
+/*Container para o layout de login*/
+.centered-box{
+	height: 40%;
+	width: 20%;
+	/*Posiciona o container no centro da tela*/
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	/*Tamanho mínimo*/
+	min-width: 200px;
+	min-height: 278px;
+	border: 3px solid black;
+}
+
+/*Customiza a mensagem de erro*/
+.errorlist.nonfield{
+
+}
+
+.field {
+	padding-top: 10px;
 }
 
 /* Header */
 .header {
-	padding: 1px;
+	width: 100%;
     text-align: center;
-    background: #1abc9c;
-    color: black;
+    background: #3F51B5;
+    color: #FFFFFF;
 }
 
 h2 {
@@ -17,29 +45,28 @@ h2 {
 }
 
 form {
-	padding: 10px;
-	width: 400px;
-	margin: auto;
-	margin-bottom: 10px;
-	border-radius: 12px;
-	border: 1px solid black;
+	height: 180px;
+	width: 100%;
+    color: black;
+    background: white;
+    text-align: center;
 }
 
 /*Rodapé*/
 .foot {
-	padding: 10px;
 	width: 100%;
 	text-align: center;
-	border: 1px solid red;
+    color: #FFFFFF;
+	background: #3F51B5;
 }
 
 /*Botão login*/
 .button{
-    width: 40%;
-    margin: auto;
+    width: 200px;
 }
 
 /*Truque para centralizar o botão no formulário*/
 .button_holder{
+	padding-top: 10px;
 	text-align: center;
 }
