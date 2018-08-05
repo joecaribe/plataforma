@@ -4,22 +4,26 @@ body{
 	width: 100vh;
 
 	font-family: Arial;
-    background: #f3eae0;
+    background: #FFE0B2;
 }
 
 /*Container para o layout de login*/
 .centered-box{
-	height: 40%;
-	width: 20%;
 	/*Posiciona o container no centro da tela*/
 	position: fixed;
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%,-50%);
-	/*Tamanho mínimo*/
-	min-width: 200px;
-	min-height: 278px;
-	border: 3px solid black;
+	/*Tamanho*/
+	width: 220px;
+	/*Bordas*/
+	border-radius: 5px;
+	border: 1px solid #BDBDBD;
+	box-shadow: 5px 5px #BDBDBD;
+	/*Cor de fundo*/
+	background: white;
+	/*Centraliza o conteúdo*/
+	text-align: center;
 }
 
 /*Customiza a mensagem de erro*/
@@ -29,35 +33,27 @@ body{
 
 .field {
 	padding-top: 10px;
+	padding-bottom: 10px;
 }
 
 /* Header */
 .header {
 	width: 100%;
     text-align: center;
-    background: #3F51B5;
-    color: #FFFFFF;
-}
-
-h2 {
-	color : #000000;
-	text-align : center;
 }
 
 form {
-	height: 180px;
-	width: 100%;
+	margin:10px;
+	width: 200px;
     color: black;
-    background: white;
     text-align: center;
 }
 
 /*Rodapé*/
 .foot {
-	width: 100%;
+	margin: 10px;
 	text-align: center;
-    color: #FFFFFF;
-	background: #3F51B5;
+    color: black;
 }
 
 /*Botão login*/

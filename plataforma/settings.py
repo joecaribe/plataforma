@@ -128,3 +128,7 @@ LOGOUT_REDIRECT_URL = '/' #Logout leva de volta à tela de login
 #Sistema de login
 AUTH_USER_MODEL = 'login.CustomUser'
 LOGIN_URL = '/conta/login'
+
+#Sistema de email
+EMAIL_BACKEND = "django.core.mail.backends.filebased.EmailBackend"
+EMAIL_FILE_PATH = os.path.join(BASE_DIR, "sent_emails")
