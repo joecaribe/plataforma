@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'login',
+    'home',
 ]
 
 MIDDLEWARE = [
@@ -121,10 +122,13 @@ USE_TZ = True
 STATIC_URL = '/static/'
 
 #Modificações
-
-#Arquivos estáticos
-LOGIN_REDIRECT_URL = '/' #Um login bem sucedido leva o usuário para /home
+LOGIN_REDIRECT_URL = 'home' #Um login bem sucedido leva o usuário para /home
 LOGOUT_REDIRECT_URL = '/' #Logout leva de volta à tela de login
 
 #Sistema de login
 AUTH_USER_MODEL = 'login.CustomUser'
+LOGIN_URL = '/conta/login'
+
+#Sistema de email
+EMAIL_BACKEND = "django.core.mail.backends.filebased.EmailBackend"
+EMAIL_FILE_PATH = os.path.join(BASE_DIR, "sent_emails")

@@ -1,9 +1,84 @@
-h2 {
-	color : #000000;
-	text-align : center;
-	font-family: "SIMPSON";
+body{
+	/*Deixa o body do tamanho da janela do navegador*/
+	height: 100vh;
+	width: 100vh;
+
+	font-family: Arial;
+    background: #FFE0B2;
 }
+
+/*Container para o layout de login*/
+.centered-box{
+	/*Posiciona o container no centro da tela*/
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	/*Tamanho*/
+	min-width: 220px;
+	/*Bordas*/
+	border-radius: 5px;
+	border: 1px solid #BDBDBD;
+	box-shadow: 5px 5px #BDBDBD;
+	/*Cor de fundo*/
+	background: white;
+	/*Centraliza o conteúdo*/
+	text-align: center;
+}
+
+/*Caixa de informações*/
+.info-box{
+	/*bordas e margens*/
+	border-radius: 5px;
+	border: 1px solid #BDBDBD;
+	/*background*/
+	background-color: white;
+	/*Texto*/
+	text-align: left;
+}
+
+/*Customiza a mensagem de erro*/
+.errorlist.nonfield{
+	text-align: left;
+	max-width: 300px;
+	color: red;
+}
+.errorlist{
+	text-align: left;
+	max-width: 300px;
+	color: red;
+}
+
+.text-box {
+	display: block;
+	width: 100%;
+	box-sizing: border-box;
+	margin-top: 10px;
+}
+
+/* Header */
+.header {
+	width: 100%;
+    text-align: center;
+}
+
 form {
-	width: 400px;
-	margin: 0 auto;
+	margin:10px;
+	min-width: 200px;
+    color: black;
+    text-align: center;
+}
+
+/*Rodapé*/
+.foot {
+	margin: 10px;
+	text-align: center;
+    color: black;
+}
+
+/*Botão login*/
+.button{
+	width: 100%;
+    min-width: 200px;
+    margin-top: 10px;
 }

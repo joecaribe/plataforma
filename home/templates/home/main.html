@@ -1,0 +1,26 @@
+{% extends 'home/base.html' %}
+<!-- home/templates/home/main.html -->
+
+{% block content %}
+<div class = "row">
+	<div class = "content">
+		{% if course_list %}
+   			<ul>
+	    	{% for course in course_list %}
+    	    	<li><a href="#">{{ course.name }}</a> - <a href="#"> 	apagar </a></li>
+	    	{% endfor %}
+	    	</ul>
+		{% else %}
+	    	<p>Você ainda não cadastrou nenhum curso.</p>
+		{% endif %}
+	</div>
+	<div class = "content">
+		<p>mais conteúdo</p>
+		<p>mais conteúdo</p>
+		<p>mais conteúdo</p>
+		<p>mais conteúdo</p>
+		<p>mais conteúdo</p>
+		<p>mais conteúdo</p>
+	</div>
+</div>
+{% endblock %}
