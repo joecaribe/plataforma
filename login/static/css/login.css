@@ -15,7 +15,7 @@ body{
 	left: 50%;
 	transform: translate(-50%,-50%);
 	/*Tamanho*/
-	width: 220px;
+	min-width: 220px;
 	/*Bordas*/
 	border-radius: 5px;
 	border: 1px solid #BDBDBD;
@@ -26,14 +26,34 @@ body{
 	text-align: center;
 }
 
-/*Customiza a mensagem de erro*/
-.errorlist.nonfield{
-
+/*Caixa de informações*/
+.info-box{
+	/*bordas e margens*/
+	border-radius: 5px;
+	border: 1px solid #BDBDBD;
+	/*background*/
+	background-color: white;
+	/*Texto*/
+	text-align: left;
 }
 
-.field {
-	padding-top: 10px;
-	padding-bottom: 10px;
+/*Customiza a mensagem de erro*/
+.errorlist.nonfield{
+	text-align: left;
+	max-width: 300px;
+	color: red;
+}
+.errorlist{
+	text-align: left;
+	max-width: 300px;
+	color: red;
+}
+
+.text-box {
+	display: block;
+	width: 100%;
+	box-sizing: border-box;
+	margin-top: 10px;
 }
 
 /* Header */
@@ -44,7 +64,7 @@ body{
 
 form {
 	margin:10px;
-	width: 200px;
+	min-width: 200px;
     color: black;
     text-align: center;
 }
@@ -58,11 +78,7 @@ form {
 
 /*Botão login*/
 .button{
-    width: 200px;
-}
-
-/*Truque para centralizar o botão no formulário*/
-.button_holder{
-	padding-top: 10px;
-	text-align: center;
+	width: 100%;
+    min-width: 200px;
+    margin-top: 10px;
 }
